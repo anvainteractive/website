@@ -1,0 +1,12 @@
+*,
+*::before,
+*::after{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body,h1,h2,h3,p,figure,blockquote,dl,dd{margin:0}
+ul[role=list],ol[role=list]{list-style:none}
+body{min-height:100vh;text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased}
+img,picture{max-width:100%;display:block}
+button,input,textarea,select{font:inherit}
+a{text-decoration:none;color:inherit}
+button{border:0}
+:focus-visible{outline:3px solid rgba(17,18,20,.24);outline-offset:3px}

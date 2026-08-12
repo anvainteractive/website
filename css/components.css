@@ -1,0 +1,61 @@
+
+.glass{
+  background:var(--glass);
+  border:1px solid rgba(255,255,255,.75);
+  box-shadow:0 10px 34px rgba(20,22,26,.08),inset 0 0 0 1px rgba(17,18,20,.035);
+  -webkit-backdrop-filter:blur(18px) saturate(1.08);
+  backdrop-filter:blur(18px) saturate(1.08);
+}
+.button{
+  min-height:48px;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  gap:10px;
+  padding:0 20px;
+  border-radius:999px;
+  font-weight:650;
+  letter-spacing:-.01em;
+  transition:transform .24s var(--ease),box-shadow .24s var(--ease),background .24s ease;
+  cursor:pointer;
+}
+.button img,.text-link img{width:18px;height:18px}
+.button.primary{background:var(--ink);color:#fff;box-shadow:0 10px 24px rgba(17,18,20,.14)}
+.button.primary img{filter:invert(1)}
+.button.primary:hover{transform:translateY(-2px);box-shadow:0 16px 30px rgba(17,18,20,.18)}
+.button.secondary{background:#fff;color:var(--ink);border:1px solid var(--line)}
+.button.secondary:hover{transform:translateY(-2px);box-shadow:var(--shadow-soft)}
+.icon-button{
+  width:42px;height:42px;border-radius:50%;background:#fff;border:1px solid var(--line);
+  display:grid;place-items:center;cursor:pointer;
+}
+.icon-button img{width:19px;height:19px}
+.tag-row{display:flex;flex-wrap:wrap;gap:8px}
+.tag{
+  display:inline-flex;align-items:center;min-height:28px;padding:0 11px;border-radius:999px;
+  background:var(--ink);color:#fff;font-size:.78rem;font-weight:650;letter-spacing:.02em;
+}
+.tag.subtle{background:var(--surface-2);color:#45474b;border:1px solid var(--line)}
+.kicker{text-transform:uppercase;letter-spacing:.14em;font-size:.75rem;font-weight:760;color:var(--muted)}
+.text-link{display:inline-flex;align-items:center;gap:8px;font-weight:680}
+.info-card{
+  background:#fff;border:1px solid var(--line);border-radius:var(--radius-lg);padding:28px;
+  box-shadow:var(--shadow-soft);transition:transform .3s var(--ease),box-shadow .3s var(--ease)
+}
+.info-card:hover{transform:translateY(-4px);box-shadow:var(--shadow)}
+.info-card h3{font-size:1.35rem;letter-spacing:-.03em;margin:10px 0 8px}
+.info-card p:last-child{color:var(--muted);line-height:1.65}
+.card-icon{
+  width:48px;height:48px;border-radius:15px;background:var(--surface-2);display:grid;place-items:center;margin-bottom:24px;
+  border:1px solid var(--line)
+}
+.card-icon img{width:23px;height:23px}
+.status-pill{
+  display:inline-flex;align-items:center;gap:8px;padding:7px 11px;border-radius:999px;
+  font-size:.76rem;font-weight:720;border:1px solid transparent;white-space:nowrap
+}
+.status-pill::before{content:"";width:7px;height:7px;border-radius:50%;background:currentColor}
+.status-pill.operational{color:var(--green);background:rgba(46,158,102,.08);border-color:rgba(46,158,102,.18)}
+.status-pill.degraded,.status-pill.development{color:var(--amber);background:rgba(177,122,28,.08);border-color:rgba(177,122,28,.18)}
+.status-pill.maintenance,.status-pill.offline{color:var(--red);background:rgba(200,79,87,.08);border-color:rgba(200,79,87,.18)}
+.status-pill.partial{color:var(--blue);background:rgba(73,119,215,.08);border-color:rgba(73,119,215,.18)}
