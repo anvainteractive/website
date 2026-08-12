@@ -3,9 +3,9 @@ window.ANVA_CONFIG = {
   resortName: "ANVA Horizon Resort",
 
   // Replace these before publishing.
-  assistanceHubUrl: "",
-  robloxHorizonUrl: "",
-  robloxTheGameUrl: "",
+  assistanceHubUrl: "https://discord.gg/p7855SdNe7",
+  robloxHorizonUrl: "https://www.roblox.com/de/games/71994813621622/ANVA-Horizon-Resort",
+  robloxTheGameUrl: "https://www.roblox.com/de/games/129129176343285/The-Game",
 
   // Static-site persistence.
   // Likes and views are stored only in this browser/device.
